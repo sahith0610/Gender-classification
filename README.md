@@ -1,1 +1,5 @@
 # Gender-classification
+The gender classification model processes images of men and women using a custom Convolutional Neural Network (CNN) combined with ResNet-50 for feature extraction. Initially, a custom CNN is trained from scratch to learn gender-specific features from images. The learned weights and extracted features are then integrated into ResNet-50, where skip connections help retain essential information, while unnecessary layers are frozen to reduce computational complexity and improve efficiency.
+
+To assess the model's performance, classification results are evaluated using a Confusion Matrix, which provides insights into true positive, true negative, false positive, and false negative rates. Additionally, the Receiver Operating Characteristic (ROC) Curve is used to measure the model’s ability to distinguish between male and female classifications by analyzing the trade-off between sensitivity and specificity. This approach ensures robust performance, leveraging deep learning techniques for accurate gender classification.
+
